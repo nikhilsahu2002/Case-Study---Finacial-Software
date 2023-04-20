@@ -3,7 +3,7 @@ public class Dividend_stocks extends Stocks {
 
     public Dividend_stocks(String symbol, double CurrentPrice,double Dividend) {
         super(symbol,  CurrentPrice,Dividend);
-        Dividend = 0.0;
+        this.Dividend = Dividend;
     }
     
     @Override

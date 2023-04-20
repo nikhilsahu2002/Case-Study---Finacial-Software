@@ -1,22 +1,18 @@
 public class Stocks extends ShareAssets {
 
-    private int TotalShare;
+    private double TotalShare;
 
     public Stocks(String symbol, double CurrentPrice,double TotalShare) {
         super(symbol, CurrentPrice, TotalShare);
-        TotalShare=0;
+        this.TotalShare=TotalShare;
     }
     @Override
     public double getMarketValue() {
         return getCurrentPrice() * TotalShare;
     }
     
-    public int getTotalShare() {
+    public double getTotalShare() {
         return TotalShare;
-    }
-
-    public void setTotalShare(int totalShare) {
-        TotalShare = totalShare;
     }
 
     public void SharePurchase(int shares,double PricePerShare) {

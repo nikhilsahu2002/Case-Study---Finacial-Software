@@ -4,7 +4,7 @@ public class Mutual_Funds extends ShareAssets  {
     
     public Mutual_Funds(String symbol, double CurrentPrice,double totalShare) {
         super(symbol, CurrentPrice, totalShare);
-        totalShare=0.0;
+        this.totalShare=totalShare;
     }
     @Override
     public double getMarketValue() {

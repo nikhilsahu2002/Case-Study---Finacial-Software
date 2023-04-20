@@ -4,6 +4,9 @@ public class Code_test {
         // Stocks stock1 = new Stocks(null, 1000);
         // Mutual_Funds fund1 = new Mutual_Funds(null, 1000);
         // Dividend_stocks dstock1 = new Dividend_stocks(null, 100);
+        Stocks stocks = new Stocks(null, 20, 200);
+        stocks.getCurrentPrice();
+        System.out.println(stocks.getMarketValue());
     }
 }
  
